@@ -1,0 +1,178 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif; /* Global font family */
+    font-size: 22px; /* Global font size */
+    color: seashell; /* Global text color */
+    opacity: 0.9; /* Global opacity */
+
+    }
+  body {
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    border-bottom: 1px solid seashell;
+    z-index: 1000; /* High value to ensure it's on top of other elements */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+  }
+  
+  nav .logo {
+    font-size: 22px;
+  }
+
+  nav .logo img {
+    max-height: 50px; 
+    width: auto; 
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: seashell;
+    text-decoration: underline;
+  }
+  
+  #mission {
+    margin-top: 69px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 69px;
+    height: 700px;
+    width: 95%;
+    text-align: center;
+    background-image: url('Photoes/img-mission-background.jpg');
+    background-size: cover;
+    background-position: center center; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  
+  .mission-content {
+    background-color: rgba(0, 0, 0, 0.8); 
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+  
+  #featured {
+    max-width: 1000px;
+    margin: 20px auto; /* Centers the section with a margin at the top and bottom */
+    text-align: center;
+  }
+  
+  .featured-teas {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between each item */
+  }
+  
+  .imageText {
+    flex: 0 0 auto; /* Prevents the div from growing or shrinking */
+    margin: 10px; /* Provides space around the div */
+  }
+  
+  .imageText img {
+    width: 300px; 
+    height: 200px; 
+  }
+  
+  .imageText h4 {
+    margin-top: 10px; /* Space between the image and the text */
+  }
+  
+  
+  
+  #locations {
+    background-image: url('Photoes/img-locations-background.jpg');
+    text-align: center;
+    padding: 50px 0; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height:500px;
+    align-items: center;
+
+    justify-content: center; 
+  }
+  
+  #locations h3 {
+    margin-bottom: 15px; 
+    color: rgb(255, 245, 238,0.8); 
+    font-size: 30px; 
+  }
+  
+  .location {
+    display: inline-block; 
+    width: 300px; 
+    margin: 20px 20px; 
+    background-color: rgba(0, 0, 0, 1); 
+    color: seashell;
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+  
+  .location p {
+    line-height: 1.6; 
+    color: seashell;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .location {
+      display: block; 
+      margin: 20px auto; 
+    }
+  }
+  
+  
+  footer {
+ 
+    color: hsla(24, 100%, 97%, 1); 
+    padding: 20px; 
+    flex-wrap: wrap;
+  }
+  
+  .footer-content {
+    text-align: center; 
+    margin: 0;
+    height:200px;
+    font-size: 30px; 
+  }
+  .footer-content h3{
+    text-align: center; 
+    margin: 20px 20px;
+    font-size: 30px; 
+  }
+
+  .copyright {
+    margin-left: 20px; 
+    font-size: 0.75rem; 
+    opacity: 0.5;
+    text-align: left; 
+  }
+  
+  
